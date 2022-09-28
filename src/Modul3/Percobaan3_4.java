@@ -16,14 +16,6 @@ public class Percobaan3_4 {
             this.nilai = nilai;
         }
 
-        public String getNama() {
-            return nama;
-        }
-
-        public int getNilai() {
-            return nilai;
-        }
-
         @Override
         public int compareTo(Daftar o) {
             return this.nilai - o.nilai;
@@ -42,7 +34,7 @@ public class Percobaan3_4 {
 
         for (int i = 0; i < siswa.length; i++) {
             String huruf;
-            int nilai = siswa[i].getNilai();
+            int nilai = siswa[i].nilai;
             if (nilai < 46) {
                 huruf = "D";
             } else if (nilai < 56) {
@@ -56,13 +48,13 @@ public class Percobaan3_4 {
             } else {
                 huruf = "A";
             }
-            System.out.println("Nama : " + siswa[i].getNama() + "\tNilai : " + huruf);
+            System.out.println("Nama : " + siswa[i].nama + "\tNilai : " + huruf);
         }
 
         Arrays.sort(siswa);
-        JOptionPane.showMessageDialog(null, "Nilai Tertinggi adalah " + siswa[siswa.length - 1].getNama() + "("
-                + siswa[siswa.length - 1].getNilai() + ")");
+        JOptionPane.showMessageDialog(null, "Nilai Tertinggi adalah " + siswa[siswa.length - 1].nama + "("
+                + siswa[siswa.length - 1].nilai + ")");
         JOptionPane.showMessageDialog(null,
-                "Nilai Terendah adalah " + siswa[0].getNama() + "(" + siswa[0].getNilai() + ")");
+                "Nilai Terendah adalah " + siswa[0].nama + "(" + siswa[0].nilai + ")");
     }
 }

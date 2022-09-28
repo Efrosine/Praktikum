@@ -34,9 +34,9 @@ public class Pendahuluan3_3 {
             System.out.println("Anda tidak beruntung");
         } else if (d == 1) {
             System.out.println("Anda kurang beruntung");
-        } else if (d == 2) {
+        } else if(d==2) {
             System.out.println("Anda beruntung");
-        } else {
+        }else{
             System.out.println("Anda sangat berntung");
         }
 
