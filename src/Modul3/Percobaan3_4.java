@@ -2,6 +2,8 @@ package Modul3;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class Percobaan3_4 {
 
     static class Daftar implements Comparable<Daftar> {
@@ -58,8 +60,9 @@ public class Percobaan3_4 {
         }
 
         Arrays.sort(siswa);
-        System.out.println("Nilai Tertinggi adalah " + siswa[siswa.length - 1].getNama() + "("
+        JOptionPane.showMessageDialog(null, "Nilai Tertinggi adalah " + siswa[siswa.length - 1].getNama() + "("
                 + siswa[siswa.length - 1].getNilai() + ")");
-        System.out.println("Nilai Terendah adalah " + siswa[0].getNama() + "(" + siswa[0].getNilai() + ")");
+        JOptionPane.showMessageDialog(null,
+                "Nilai Terendah adalah " + siswa[0].getNama() + "(" + siswa[0].getNilai() + ")");
     }
 }
