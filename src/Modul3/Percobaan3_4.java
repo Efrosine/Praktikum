@@ -20,7 +20,6 @@ public class Percobaan3_4 {
         public int compareTo(Daftar o) {
             return this.nilai - o.nilai;
         }
-
     }
 
     public static void main(String[] args) {
@@ -48,7 +47,7 @@ public class Percobaan3_4 {
             } else {
                 huruf = "A";
             }
-            System.out.println("Nama : " + siswa[i].nama + "\tNilai : " + huruf);
+            JOptionPane.showMessageDialog(null, "Nama : " + siswa[i].nama + " Nilai : " + huruf);
         }
 
         Arrays.sort(siswa);
