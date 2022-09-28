@@ -28,14 +28,16 @@ public class Pendahuluan3_3 {
             System.out.println("Anda ehem......");
         }
 
-        int d = rand.nextInt(3);
+        int d = rand.nextInt(4);
         System.out.println("\nNilai D = " + d);
         if (d == 0) {
             System.out.println("Anda tidak beruntung");
         } else if (d == 1) {
             System.out.println("Anda kurang beruntung");
-        } else {
+        } else if (d == 2) {
             System.out.println("Anda beruntung");
+        } else {
+            System.out.println("Anda sangat berntung");
         }
 
         int e = rand.nextInt(3);

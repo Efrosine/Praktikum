@@ -16,6 +16,7 @@ public class Pendahuluan3_4 {
         }
         int b = Integer.parseInt(JOptionPane.showInputDialog("Input Nilai B"));
 
-        System.out.println("\nHasil penjumlahan a dan b adalah = " + (a + b));
+        System.out.println("\nnilai a = " + a + "\tnilai b = " + b);
+        System.out.println("Hasil penjumlahan a dan b adalah = " + (a + b));
     }
 }

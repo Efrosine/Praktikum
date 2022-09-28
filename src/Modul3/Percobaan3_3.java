@@ -21,6 +21,6 @@ public class Percobaan3_3 {
         double totalKomisi = pendapatan * komisi;
         double totalPendaptan = pendapatan + uangJasa + totalKomisi;
 
-        System.out.println("Pendaptan bersih salesman adalah : Rp." + totalPendaptan);
+        JOptionPane.showMessageDialog(null, "Pendaptan bersih salesman adalah : Rp." + totalPendaptan);
     }
 }

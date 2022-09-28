@@ -15,7 +15,7 @@ public class Percobaan3_1 {
             System.out.print("Masukkan Nilai Ketiga = ");
             ketiga = Integer.parseInt(reader.readLine());
         } catch (IOException ex) {
-
+            System.out.println("Error");
         }
         System.out.println("Nilai yang dimasukkan = " + pertama + ", " + kedua + ", " + ketiga);
     }
