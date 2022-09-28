@@ -34,18 +34,22 @@ public class Percobaan3_4 {
         for (int i = 0; i < siswa.length; i++) {
             String huruf;
             int nilai = siswa[i].nilai;
-            if (nilai < 46) {
-                huruf = "D";
-            } else if (nilai < 56) {
-                huruf = "C";
-            } else if (nilai < 66) {
-                huruf = "C+";
-            } else if (nilai < 76) {
-                huruf = "B";
-            } else if (nilai < 86) {
-                huruf = "B+";
+            if (nilai > 35) {
+                if (nilai < 46) {
+                    huruf = "D";
+                } else if (nilai < 56) {
+                    huruf = "C";
+                } else if (nilai < 66) {
+                    huruf = "C+";
+                } else if (nilai < 76) {
+                    huruf = "B";
+                } else if (nilai < 86) {
+                    huruf = "B+";
+                } else {
+                    huruf = "A";
+                }
             } else {
-                huruf = "A";
+                huruf = "tidak terdefinisi";
             }
             JOptionPane.showMessageDialog(null, "Nama : " + siswa[i].nama + " Nilai : " + huruf);
         }
