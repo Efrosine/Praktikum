@@ -1,6 +1,7 @@
 package Modul3;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class Percobaan3_2 {
     public static void main(String[] args) {
@@ -19,12 +20,9 @@ public class Percobaan3_2 {
         }
         System.out.println("Nilai yang dimasukkan = " + pertama + ", " + kedua + ", " + ketiga);
 
-        int terbesar = 0, terkecil = 0, dummyBes, dummyKec;
-        dummyBes = pertama > kedua ? pertama : kedua;
-        terbesar = dummyBes > ketiga ? dummyBes : ketiga;
+        int[] niai = {pertama,kedua,ketiga};
+        Arrays.sort(niai);
 
-        dummyKec = pertama < kedua ? pertama : kedua;
-        terkecil = dummyKec < ketiga ? dummyKec : ketiga;
-        System.out.println("Nilai Terbesar Adalah = " + terbesar + "\nNilai Terkecil Adalah = " + terkecil);
+        System.out.println("Nilai Terbesar Adalah = " + niai[niai.length-1]+ "\nNilai Terkecil Adalah = " + niai[0]);
     }
 }
