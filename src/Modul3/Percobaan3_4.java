@@ -34,7 +34,7 @@ public class Percobaan3_4 {
         for (int i = 0; i < siswa.length; i++) {
             String huruf;
             int nilai = siswa[i].nilai;
-            if (nilai > 35) {
+            if (nilai > 35 && nilai < 101) {
                 if (nilai < 46) {
                     huruf = "D";
                 } else if (nilai < 56) {

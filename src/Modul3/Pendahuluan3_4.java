@@ -7,7 +7,6 @@ public class Pendahuluan3_4 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-       
         int a = 0;
         int b = 0;
         try {
@@ -21,7 +20,6 @@ public class Pendahuluan3_4 {
         int aa = Integer.parseInt(JOptionPane.showInputDialog("Input Nilai A"));
         int bb = Integer.parseInt(JOptionPane.showInputDialog("Input Nilai B"));
 
-        System.out.println("\nnilai a = " + a + "\tnilai b = " + b);
         System.out.println("(Buffer)Hasil penjumlahan a dan b adalah = " + (a + b));
         System.out.println("(JOption)Hasil penjumlahan aa dan bb adalah = " + (aa + bb));
     }
