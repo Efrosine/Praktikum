@@ -7,7 +7,7 @@ import java.util.List;
 
 import javax.swing.*;
 
-public class Pendahuluan5_1 {
+public class Pendahuluan5_4 {
     public static void main(String[] args) {
         
         int data[] = {4,6,4,2,8,4,2,11};

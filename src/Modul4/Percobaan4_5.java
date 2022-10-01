@@ -17,7 +17,6 @@ public class Percobaan4_5 {
         }
         System.out.println("\n");
 
-        int dumy = angka;
         for (int i = 0; i < angka; i++) { // baris
             for (int j = 0; j < 2; j++) { // kanan kiri
                 String star = "* ";
@@ -26,13 +25,11 @@ public class Percobaan4_5 {
                         if (k > i)
                             star = "  ";
                     } else { // jika sisi knan
-                        if (k + 1 >= dumy && i != 0)
-                            star = " ";
+                        if((angka-k)<=i) star = "  ";
                     }
                     System.out.print(star);
                 }
             }
-            dumy = angka - i;
             System.out.println("");
         }
         System.out.println("\n");
