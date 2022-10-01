@@ -8,6 +8,7 @@ public class Percobaan4_3 {
         Scanner scan = new Scanner(System.in);
 
         int angka = scan.nextInt();
+        scan.close();
 
         if (angka == 1) System.out.println("Satu");
         else if (angka == 2) System.out.println("Dua");
