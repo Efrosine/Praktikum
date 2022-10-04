@@ -1,4 +1,4 @@
-package Modul6;
+package Modul6.Percobaan6_1;
 
 public class Array2D {
     public static void main(String[] args) {
