@@ -61,12 +61,12 @@ public class Percobaan6_2 {
             }
         }
 
-        System.out.println("Index dari angka : ");
+        System.out.println("Index dari angka : " + input);
         String sIndex = "";
         for (int[] ind : index) {
             sIndex += MessageFormat.format("{0}, ", Arrays.toString(ind));
         }
-        System.out.println("\n" + sIndex);
+        System.out.println(sIndex);
 
         int convert = Integer.parseInt((JOptionPane.showInputDialog("Massukan angka pengganti : ")));
         for (int[] ind : index) {
