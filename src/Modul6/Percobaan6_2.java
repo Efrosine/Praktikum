@@ -82,7 +82,7 @@ public class Percobaan6_2 {
             System.out.println();
         }
 
-        // soal d sulit di pahami
+
     }
 
 }
