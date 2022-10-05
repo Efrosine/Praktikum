@@ -16,5 +16,6 @@ public class Percobaan6_3 {
             }
             System.out.println(rows);
         }
+        //pake  jframe
     }
 }
