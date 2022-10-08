@@ -16,7 +16,7 @@ public class Percobaan5_2 {
 
     
    
-        int data[] = new int[3];
+        int data[] = new int[10];
         for (int a = 0; a < data.length; a++) {
             data[a] = Integer.parseInt(JOptionPane.showInputDialog(null, "Masukan Element Index ke " + a));  
         }
@@ -37,7 +37,7 @@ public class Percobaan5_2 {
         }
         System.out.println("Reratanya adalah "+sum/data.length);
 
-        int sIndex = Integer.parseInt(JOptionPane.showInputDialog("Massukan index yang diganti"));
+        int sIndex = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka yang diganti"));
         int nData =  Integer.parseInt(JOptionPane.showInputDialog("Massukan angka penganti"));
         
         List<Integer> arrTemp = getIndex(data, sIndex);
