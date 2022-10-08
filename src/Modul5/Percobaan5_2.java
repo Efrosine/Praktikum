@@ -2,8 +2,6 @@ package Modul5;
 
 import java.text.MessageFormat;
 import java.util.*;
-
-
 import javax.swing.*;
 
 public class Percobaan5_2 {
@@ -41,7 +39,13 @@ public class Percobaan5_2 {
 
         int sIndex = Integer.parseInt(JOptionPane.showInputDialog("Massukan index yang diganti"));
         int nData =  Integer.parseInt(JOptionPane.showInputDialog("Massukan angka penganti"));
-        data[sIndex] = nData;
+        
+        List<Integer> arrTemp = getIndex(data, sIndex);
+        for(int i=0;i<arrTemp.size();i++){
+            int temp = arrTemp.get(i);
+            data[temp] = nData;
+        }
+
         System.out.print("isi dari array tersesbut adalah : "+Arrays.toString(data)+"\n");
     }
 }

@@ -10,6 +10,7 @@ public class Pendahuluan7_3 {
         String nama = "";
         try {
            nama = reader.readLine(); 
+           System.out.println(nama);
         } catch (IOException e) {
            System.out.println("error");
         }finally{
