@@ -45,7 +45,7 @@ public class Percobaan5_2 {
             int temp = arrTemp.get(i);
             data[temp] = nData;
         }
-
+        System.out.println(MessageFormat.format("Setelah pergantian {0} ke {1}",sIndex,nData));
         System.out.print("isi dari array tersesbut adalah : "+Arrays.toString(data)+"\n");
     }
 }
