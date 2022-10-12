@@ -1,16 +1,23 @@
 package Modul7;
-
 public class Pendahuluan7_5 {
-    static void Countdown(int angka) {
-        if (angka <= 0) {
-            System.out.println("Mulai");
-        } else {
-            System.out.println(angka);
-            Countdown(angka - 1);
-        }
+
+    static void Print(int angka) {
+        System.out.println(Kalimat()+" "+Lingkaran(angka));
+    }
+
+    static int Power(int angka) {
+        return angka*angka;
+    }
+
+    static double Lingkaran(int jari){
+        return Power(jari)*Math.PI;
+    }
+
+    static String Kalimat(){
+        return "Luas Lingkaran ";
     }
 
     public static void main(String[] args) {
-        Countdown(4);
+    Print(3);    
     }
 }

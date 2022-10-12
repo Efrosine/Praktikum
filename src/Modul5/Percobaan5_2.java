@@ -35,7 +35,7 @@ public class Percobaan5_2 {
         for(int a:data){
             sum+=a;
         }
-        System.out.println("Reratanya adalah "+sum/data.length);
+        System.out.println("Reratanya adalah "+sum/(double)data.length);
 
         int sIndex = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka yang diganti"));
         int nData =  Integer.parseInt(JOptionPane.showInputDialog("Massukan angka penganti"));
