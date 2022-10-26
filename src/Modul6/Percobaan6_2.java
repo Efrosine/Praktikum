@@ -2,9 +2,6 @@ package Modul6;
 
 import javax.swing.JOptionPane;
 
-import java.text.MessageFormat;
-import java.util.*;
-
 public class Percobaan6_2 {
     public static void main(String[] args) {
         int data2[][] = { { 4, 6, 4, 2, 8, 4, 2, 10 }, { 4, 6, 4, 2, 8, 4, 2, 10 } };
@@ -39,7 +36,8 @@ public class Percobaan6_2 {
             row2++;
         } while (row2 < data2.length);
 
-        int sumArr = 0, lengthArr = 0;
+        int sumArr = 0;
+        double lengthArr = 0;
         for (int i = 0; i < data2.length; i++) {
             for (int j = 0; j < data2[i].length; j++) {
                 sumArr += data2[i][j];
@@ -47,41 +45,35 @@ public class Percobaan6_2 {
             }
         }
 
-        int rerata = sumArr / lengthArr;
+        System.out.println(sumArr);
+        System.out.println(lengthArr);
+        double rerata = sumArr / lengthArr;
         System.out.println("\nNilai Reratanya : " + rerata);
 
         int input = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka : "));
-        List<int[]> index = new ArrayList<>();
+        int convert = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka pengganti : "));
         for (int i = 0; i < data2.length; i++) {
             for (int j = 0; j < data2[i].length; j++) {
                 if (data2[i][j] == input) {
-                    int[] arr = { i, j };
-                    index.add(arr);
+                    data2[i][j] = convert;
                 }
             }
         }
 
-        System.out.println("Index dari angka : " + input);
-        String sIndex = "";
-        for (int[] ind : index) {
-            sIndex += MessageFormat.format("{0}, ", Arrays.toString(ind));
-        }
-        System.out.println(sIndex);
-
-        int convert = Integer.parseInt((JOptionPane.showInputDialog("Massukan angka pengganti : ")));
-        for (int[] ind : index) {
-            int rows = ind[0], columns = ind[1];
-            data2[rows][columns] = convert;
-        }
-
-        System.out.println(MessageFormat.format("\nHasil pergantian angka {0} ke angka {1}", input, convert));
-        for (int a = 0; a < data2.length; a++) {
-            for (int b = 0; b < data2[0].length; b++) {
-                System.out.print(data2[a][b] + " ");
+        for (int i = 0; i < data2.length; i++) {
+            for (int j = 0; j < data2[0].length; j++) {
+                System.out.print(data2[i][j] + " ");
             }
             System.out.println();
         }
 
+        int evenSum =0;
+        for (int i = 0; i < data2.length; i++) {
+            for (int j = 0; j < data2[0].length; j++) {
+               if(j%2==0) evenSum += data2[i][j];
+            }
+        }
+        System.out.println("total dari inex genap = "+evenSum);
 
     }
 
