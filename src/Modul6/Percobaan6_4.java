@@ -1,9 +1,6 @@
 package Modul6;
 
 import javax.swing.JOptionPane;
-import java.text.MessageFormat;
-import java.util.*;
-
 public class Percobaan6_4 {
 
     static void printArr(int[][] arr) {
@@ -29,24 +26,13 @@ public class Percobaan6_4 {
         printArr(matric2);
 
         int[][] hasil = new int[2][2];
-
-        int input = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka : "));
-        List<int[]> index = new ArrayList<>();
+        int input = Integer.parseInt(JOptionPane.showInputDialog("Massukan angka :"));
+        System.out.print("Angka "+ input+" berada di index ");
         for (int i = 0; i < matric1.length; i++) {
             for (int j = 0; j < matric1[i].length; j++) {
-                if (matric1[i][j] == input) {
-                    int[] arr = { i, j };
-                    index.add(arr);
-                }
+                if(matric1[i][j] == input) System.out.print("("+i+","+j+")");
             }
         }
-
-        System.out.println("\nIndex dari angka : " + input);
-        String sIndex = "";
-        for (int[] ind : index) {
-            sIndex += MessageFormat.format("{0}, ", Arrays.toString(ind));
-        }
-        System.out.println(sIndex);
 
         for (int i = 0; i < hasil.length; i++) {
             for (int j = 0; j < hasil[i].length; j++) {
