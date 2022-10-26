@@ -1,21 +1,20 @@
 package Modul6;
-
+import javax.swing.*;
 public class Percobaan6_3 {
     public static void main(String[] args) {
 
         String[][] data = {
-                { "NAMA", "ALAMAT      ", "TELEPON" }, 
-                { "ABDUL", "KEDIRI   ", "085436668991" },
+                { "ABDUL", "KEDIRI", "085436668991" },
                 { "KUSNO", "TRENGGALEK", "085436668992" }, 
                 { "PONIRAN", "BOJONEGORO", "085436668999" }
         };
-        for (int i = 0; i < data.length; i++) {
-            String rows = "";
-            for (int j = 0; j < data[i].length; j++) {
-                rows += (data[i][j] + "\t");
-            }
-            System.out.println(rows);
-        }
-        //pake  jframe
+
+        JFrame f = new JFrame();        
+        String column[]={"NAMA","ALAMAT","TELEPON"};         
+        JTable jt=new JTable(data,column);      
+        JScrollPane js=new JScrollPane(jt);    
+        f.add(js);          
+        f.setSize(300,200);    
+        f.setVisible(true);  
     }
 }

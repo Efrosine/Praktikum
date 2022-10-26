@@ -14,7 +14,7 @@ public class inputconsole {
         return string;
     }
 
-    public static int readInt() {
+    public int readInt() {
         return Integer.parseInt(readString());
     }
 
