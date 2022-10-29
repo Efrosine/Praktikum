@@ -5,16 +5,16 @@ public class Pendahuluan7_5 {
         System.out.println(Kalimat()+" "+Lingkaran(angka));
     }
 
-    static int Power(int angka) {
-        return angka*angka;
+    static String Kalimat(){
+        return "Luas Lingkaran ";
     }
 
     static double Lingkaran(int jari){
         return Power(jari)*Math.PI;
     }
 
-    static String Kalimat(){
-        return "Luas Lingkaran ";
+     static int Power(int angka) {
+        return angka*angka;
     }
 
     public static void main(String[] args) {
