@@ -3,6 +3,9 @@ package Modul7;
 import javax.swing.JOptionPane;
 
 public class Percobaan7_3 {
+    static int readINT(String s){
+        return Integer.parseInt(JOptionPane.showInputDialog(s));
+    }
     public int lPersegi(int p ,int l){
         int luas = p*l;
         return luas;
@@ -12,20 +15,19 @@ public class Percobaan7_3 {
         return luas;
     }
     public double lLingkar(int r) {
-        double luas = Math.PI*Math.pow(r,2);
-        return luas;
+        return Math.PI*Math.pow(r,2);
     }
     public static void main(String[] args) {
        Percobaan7_3 pc = new Percobaan7_3();
-       int p = Integer.parseInt(JOptionPane.showInputDialog("Panjang Persegi"));
-       int l = Integer.parseInt(JOptionPane.showInputDialog("Lebar Persegi"));
-       System.out.println("Luas persegi = "+ pc.lPersegi(p, l));
+       int p = readINT("Panjang Persegi");
+       int l = readINT("Lebar Persegi");
+       System.out.println("Luas Persegi = "+ pc.lPersegi(p, l));
 
-       int a = Integer.parseInt(JOptionPane.showInputDialog("Alas Lingkaran"));
-       int t = Integer.parseInt(JOptionPane.showInputDialog("Tinggi Lingkaran"));
-       System.out.println("Luas persegi = "+ pc.lTiga(a, t));
+       int a = readINT("Alas Segitiga");
+       int t = readINT("Tinggi Segitiga");
+       System.out.println("Luas Segitiga = "+ pc.lTiga(a, t));
 
-       int r = Integer.parseInt(JOptionPane.showInputDialog("Jari Jari Lingkaran"));
-       System.out.println("Luas persegi = "+ pc.lLingkar(r));
+       int r = readINT("Jari Jari Lingkaran");
+       System.out.println("Luas Lingkaran = "+ pc.lLingkar(r));
     }
 }
