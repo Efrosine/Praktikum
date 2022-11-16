@@ -40,6 +40,7 @@ public class Pendahuluan9_3 extends Frame {
         setVisible(true);
     }
 
+    //fungsi button ditambahkan sesuai dengan operatornya
     void fungsi() {
         bt1.addMouseListener(new MouseAdapter() {
             @Override

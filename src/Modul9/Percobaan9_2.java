@@ -11,7 +11,8 @@ public class Percobaan9_2 extends JFrame implements ActionListener {
     // Deklarasi array JButton untuk menyimpan button yang sesuai fungsinya
     JButton[] numeric = new JButton[10], operand = new JButton[6];
     // inisialisasi var (int) untuk menyimpan hasil, value pertama, dan value kedua
-    int equal, n1, n2;
+    int n1, n2;
+    double equal;
     // Inisialisasi var (char) untuk menyimpan operator
     char op;
 
@@ -52,7 +53,7 @@ public class Percobaan9_2 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // Deklarasi JButton yang menyimpan button yang digunakan
+        // Deklarasi JButton yang menyimpan button yang sedang digunakan
         JButton button = (JButton) e.getSource();
         if (button == operand[3]) { // operand3 == "C"
             equal = n1 = n2 = 0;
@@ -82,10 +83,12 @@ public class Percobaan9_2 extends JFrame implements ActionListener {
                 opf = true;
             }
 
-            if (opf) { // Jika button operator ditekan value tf di tetapkan sebagai n1
+            // Jika button operator ditekan value tf di tetapkan sebagai n1
+            if (opf) { 
                 n1 = Integer.parseInt(textF.getText());
                 textF.setText("");
-            } else { // Jika button numerik ditekan value tf akan bertambah
+            // Jika button numerik ditekan value tf akan bertambah    
+            } else { 
                 for (int i = 0; i < numeric.length; i++) {
                     if (button == numeric[i]) {
                         String text = textF.getText();
@@ -110,7 +113,7 @@ public class Percobaan9_2 extends JFrame implements ActionListener {
                 equal = n1 * n2;
                 break;
             case '/':
-                equal = n1 / n2;
+                equal = n1 / (double)n2;
                 break;
         }
     }

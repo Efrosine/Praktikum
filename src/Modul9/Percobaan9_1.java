@@ -5,10 +5,12 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Percobaan9_1 extends JFrame {
+    //deklarasi komponen yang digunakan
     JTextArea nama = new JTextArea(10, 10);
     JButton bt = new JButton("Copy");
     JTextArea txnama = new JTextArea(10, 10);
 
+    //Proses mengatur Frame
     Percobaan9_1() {
         super("Coba Event Handling");
         setLocation(200, 300);
@@ -17,6 +19,7 @@ public class Percobaan9_1 extends JFrame {
         setVisible(true);
     }
 
+    //tambahkan komponen kedalam Frame
     void tampilan() {
         getContentPane().add(nama);
         nama.append("nama kamu siapa");
@@ -27,6 +30,7 @@ public class Percobaan9_1 extends JFrame {
         setVisible(true);
     }
 
+    //membuat fungsi dari button
     void aksi_reaksi() {
         bt.addActionListener(new ActionListener() {
             @Override
@@ -37,6 +41,7 @@ public class Percobaan9_1 extends JFrame {
         });
     }
 
+    //panggil 2 method yang telah dibuat
     public static void main(String[] args) {
         Percobaan9_1 pb = new Percobaan9_1();
         pb.tampilan();
